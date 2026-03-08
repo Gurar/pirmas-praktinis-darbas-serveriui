@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<student >
+    <id>101</id>
+    <firstName>Tomas</firstName>
+    <lastName>Tomaitis</lastName>
+    <age>21</age>
+    <isActive>true</isActive>
+    <subjects>
+        <subject>
+            <id>1</id>
+            <name>Objektinis programavimas</name>
+            <creditsNumber>6</creditsNumber>
+            <grade>9.5</grade>
+        </subject>
+        <subject>
+            <id>2</id>
+            <name>Duomenu bazes</name>
+            <creditsNumber>6</creditsNumber>
+            <grade>8.0</grade>
+        </subject>
+        <subject>
+            <id>3</id>
+            <name>Operacines sistemos</name>
+            <creditsNumber>5</creditsNumber>
+            <grade>7.5</grade>
+        </subject>
+        <subject>
+            <id>4</id>
+            <name>Matematine analize</name>
+            <creditsNumber>6</creditsNumber>
+            <grade>6.0</grade>
+        </subject>
+        <subject>
+            <id>5</id>
+            <name>Anglu kalba</name>
+            <creditsNumber>3</creditsNumber>
+            <grade>10.0</grade>
+        </subject>
+        <subject>
+            <id>6</id>
+            <name>Fizika</name>
+            <creditsNumber>4</creditsNumber>
+            <grade>8.5</grade>
+        </subject>
+        <subject>
+            <id>7</id>
+            <name>Kompiuteriu tinklai</name>
+            <creditsNumber>6</creditsNumber>
+            <grade>9.0</grade>
+        </subject>
+        <subject>
+            <id>8</id>
+            <name>Filosofija</name>
+            <creditsNumber>3</creditsNumber>
+            <grade>10.0</grade>
+        </subject>
+        <subject>
+            <id>9</id>
+            <name>Web technologijos</name>
+            <creditsNumber>5</creditsNumber>
+            <grade>9.2</grade>
+        </subject>
+        <subject>
+            <id>10</id>
+            <name>Diskrecioji matematika</name>
+            <creditsNumber>4</creditsNumber>
+            <grade>5.5</grade>
+        </subject>
+    </subjects>
+</student>
