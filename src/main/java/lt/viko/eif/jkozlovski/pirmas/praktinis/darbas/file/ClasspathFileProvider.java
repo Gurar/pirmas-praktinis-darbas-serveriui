@@ -8,12 +8,16 @@ import java.io.IOException;
 import java.io.InputStream;
 
 /**
- *
+ * {@link FileProvider} implementacija, skirta failų nuskaitymui iš `classpath` (resources) aplanko.
  */
 @Component
 public class ClasspathFileProvider implements FileProvider{
     /**
-     * @param fileName
+     * Nuskaito failą iš `resources` aplanko.
+     *
+     * @param fileName Failo pavadinimas.
+     * @return Failo įvesties srautas (InputStream).
+     * @throws IOException Jei failas nerastas arba jo nepavyksta atidaryti.
      */
     @Override
     public InputStream getFileStream(String fileName) throws IOException {

@@ -10,7 +10,8 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.net.Socket;
 /**
- * Klientu uz.
+ * Kliento užklausų apdorojimo komponentas, kuris nuskaito "student.xml" failą
+ * ir išsiunčia jo turinį prisijungusiam klientui per Socket srautą.
  */
 @Component
 public class StudentFileClientHandler implements ClientHandler {
@@ -19,16 +20,19 @@ public class StudentFileClientHandler implements ClientHandler {
 
     private final FileProvider fileProvider;
     /**
-     * @param fileProvider failu
+     * Sukuria naują handlerio egzempliorių.
+     *
+     * @param fileProvider Komponentas, atsakingas už failų nuskaitymą.
      */
     public StudentFileClientHandler(FileProvider fileProvider) {
         this.fileProvider = fileProvider;
     }
 
     /**
-     * Apdoroja kliento socket ir isiuncia faila klientui
+     * Apdoroja kliento socket ryšį ir išsiunčia failą klientui.
+     * Metodas naudoja `try-with-resources`, todėl srautai ir lizdas yra automatiškai uždaromi.
      *
-     * @param socket
+     * @param socket Prisijungusio kliento lizdas.
      */
     @Override
     public void handler(Socket socket) {
